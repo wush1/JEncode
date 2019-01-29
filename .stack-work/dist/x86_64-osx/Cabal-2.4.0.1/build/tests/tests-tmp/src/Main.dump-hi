@@ -1,0 +1,234 @@
+
+==================== FINAL INTERFACE ====================
+2019-01-29 12:14:53.253005 UTC
+
+interface main:Main 8063
+  interface hash: 95928416a9cee65c4d2941fad0dac459
+  ABI hash: f0b6148e3f2adaa9d141d71429a289aa
+  export-list hash: 6a1919986546d9c81215a9457776ef2b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 036aa3fc225342641caf4ee3a9b372f3
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+  Main.test
+module dependencies: JsonEncoder
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  base-4.12.0.0:System.IO 7d8c7a747c93b42b043d691b66e1809e
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+import  -/  JsonEncoder f2eb52e3685b998d66a44cf522e75728
+  exports: 6152a77264c2eead6049431cbc798e35
+  JArray b036616b0896d86b574697619b30edf4
+  JNumber 086f2f625a2337dd0dc14fef436b85d4
+  JObject 8cdccd77e10fd7719dcf85274075b798
+  encodeJson 94352811291eb7caaa67d995f56691d7
+be86c9d078d3acbf19ba91fe74a24273
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+b09d86f2c49dd5176b544d8d13ddb6c5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+23b03bd7d075a00f5ad1ee10e6add7b8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+4ad02dd17fb5a3f5b87e1a32e181bfc1
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+f7ae784b2968491f398baa26f018d24d
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 System.IO.appendFile2
+                   @ ()
+                   Main.main4
+                   GHC.IO.IOMode.WriteMode
+                   Main.main2
+                   eta) -}
+0bc28d1b0068c84520216a0fac8e296f
+  main2 :: GHC.IO.Handle.Types.Handle -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <L,U>,
+     Unfolding: (\ (hdl :: GHC.IO.Handle.Types.Handle)[OneShot] ->
+                 GHC.IO.Handle.Text.hPutStr' hdl Main.main3 GHC.Types.False) -}
+75264dad4799509553ff44efcc6f1f17
+  main3 :: GHC.Base.String
+  {- Unfolding: (JsonEncoder.encode
+                   JsonEncoder.$fShowJValue2
+                   Main.test) -}
+2bc82da4bf46986351e4d90fbcd7e16d
+  main4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.main5) -}
+f660b29df5707fee508874134a29a295
+  main5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("test.json"#) -}
+0313f577c13b5d675334cd390bd810a5
+  main6 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+ad083acb20c02cf37afca3b6a28af852
+  test :: JsonEncoder.JValue
+  {- Strictness: m5, Unfolding: (JsonEncoder.JObject Main.test1) -}
+28ce85c119fa5fe7cbeb330fc784bf29
+  test1 :: [(GHC.Base.String, JsonEncoder.JValue)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, JsonEncoder.JValue)
+                   Main.test28
+                   Main.test2) -}
+70ec00a6140ad661c72fa6d19a56fbf5
+  test10 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 1.0##) -}
+4af300f56fe72290970d391095f5e713
+  test11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.test12) -}
+af5d257cb66d78ddc3eb61a4e0c019a9
+  test12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("width"#) -}
+d76cac86fca74b9d622d3f3a8d1a7efd
+  test13 :: ([GHC.Types.Char], JsonEncoder.JValue)
+  {- Strictness: m, Unfolding: ((Main.test19, Main.test14)) -}
+909b7d7b033c82b01daea9cb9e8ecd9e
+  test14 :: JsonEncoder.JValue
+  {- Strictness: m5, Unfolding: (JsonEncoder.JObject Main.test15) -}
+764f91d65a6ef022f4329de8b2398156
+  test15 :: [(GHC.Base.String, JsonEncoder.JValue)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, JsonEncoder.JValue)
+                   Main.test16
+                   Main.test7) -}
+4817ae4928fc1a1c1bc0afd065543ff6
+  test16 :: ([GHC.Types.Char], JsonEncoder.JValue)
+  {- Strictness: m, Unfolding: ((Main.test19, Main.test17)) -}
+15c5c89684442d6abb303906f61abf20
+  test17 :: JsonEncoder.JValue
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (JsonEncoder.JNumber Main.test18) -}
+271027bd03da6707be08b42245a5bd2c
+  test18 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 10.0##) -}
+09c1c2d477998d76180e48eb187ea5b8
+  test19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.test20) -}
+813201b6e90abf63d3a06034cbb759f8
+  test2 :: [(GHC.Base.String, JsonEncoder.JValue)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, JsonEncoder.JValue)
+                   Main.test23
+                   Main.test3) -}
+3973472e7b238e62afddf8ef890d3e4a
+  test20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("height"#) -}
+b9f16a4ee0fbf1ae3fcb755ef85b638d
+  test21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.test22) -}
+b502659164b27eb37fc9ba3858c4fafe
+  test22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("tree"#) -}
+5556a44e80e91f795648294f8cfee57a
+  test23 :: ([GHC.Types.Char], JsonEncoder.JValue)
+  {- Strictness: m, Unfolding: ((Main.test26, Main.test24)) -}
+7c5163c1e3c59623e29543ad0dd110cc
+  test24 :: JsonEncoder.JValue
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (JsonEncoder.JNumber Main.test25) -}
+81468088eeac0109cf3d39f879a4f76e
+  test25 :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 12.0##) -}
+19f5b6ec1ea7896cb0dd20598c6ffff9
+  test26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCStringUtf8# Main.test27) -}
+a97e7ab261da4db12fa1a774f70415d4
+  test27 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("\\194\\167number"#) -}
+0dd8ea61ac4541f05eb918f2fb78eb1b
+  test28 :: ([GHC.Types.Char], JsonEncoder.JValue)
+  {- Strictness: m, Unfolding: ((Main.test31, Main.test29)) -}
+2317166a9ec997affd23a17a1e3b46d4
+  test29 :: JsonEncoder.JValue
+  {- HasNoCafRefs, Strictness: m6,
+     Unfolding: (JsonEncoder.JArray Main.test30) -}
+b9753a7e746d5fa2a6fda79606cc321e
+  test3 :: [(GHC.Base.String, JsonEncoder.JValue)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, JsonEncoder.JValue)
+                   Main.test4
+                   (GHC.Types.[] @ (GHC.Base.String, JsonEncoder.JValue))) -}
+db7c2e28b049841b526c58bd150c3a28
+  test30 :: [JsonEncoder.JValue]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ JsonEncoder.JValue
+                   Main.test17
+                   (GHC.Types.[] @ JsonEncoder.JValue)) -}
+b6ee931ce9fee7752185baf3255e209f
+  test31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.test32) -}
+125464601e6f89bbd495afe9376a6b3c
+  test32 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("hj"#) -}
+6ae28a4042ca212e3c9ef708f1fc1dab
+  test4 :: ([GHC.Types.Char], JsonEncoder.JValue)
+  {- Strictness: m, Unfolding: ((Main.test21, Main.test5)) -}
+fe2dd5e5b45aa9d49d056880d8483b6d
+  test5 :: JsonEncoder.JValue
+  {- Strictness: m5, Unfolding: (JsonEncoder.JObject Main.test6) -}
+39f2dedf764d1480b5fd568e5be46f5a
+  test6 :: [(GHC.Base.String, JsonEncoder.JValue)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, JsonEncoder.JValue)
+                   Main.test13
+                   Main.test7) -}
+771128b40d9b0f8b9ca722b12c8aedb4
+  test7 :: [(GHC.Base.String, JsonEncoder.JValue)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Base.String, JsonEncoder.JValue)
+                   Main.test8
+                   (GHC.Types.[] @ (GHC.Base.String, JsonEncoder.JValue))) -}
+acd2f2e8551de84d6077ad4afdd38ae2
+  test8 :: ([GHC.Types.Char], JsonEncoder.JValue)
+  {- Strictness: m, Unfolding: ((Main.test11, Main.test9)) -}
+f7d6be44412a10c8ebc7a128e0c16d67
+  test9 :: JsonEncoder.JValue
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (JsonEncoder.JNumber Main.test10) -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

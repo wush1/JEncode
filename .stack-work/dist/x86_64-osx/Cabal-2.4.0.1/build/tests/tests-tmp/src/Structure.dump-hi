@@ -1,0 +1,337 @@
+
+==================== FINAL INTERFACE ====================
+2019-01-28 18:30:09.053757 UTC
+
+interface main:Structure 8063
+  interface hash: 633b6e922c494ca1ab3e7a4ec3c6ed81
+  ABI hash: 8c483118a1fbe84bb0f1f85d17d8a78b
+  export-list hash: 5a24f9b62d30a8458b0bfa67ebf1c5f4
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a7ebecf158ae80f21310d1b9a2dfdd4d
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Structure.JValue{Structure.JArray Structure.JBool Structure.JNull Structure.JNumber Structure.JObject Structure.JString}
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+df8e728589009b7923d54eb6fb5bb153
+  $fEqJValue :: GHC.Classes.Eq Structure.JValue
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Structure.JValue
+                  Structure.$fEqJValue_$c==
+                  Structure.$fEqJValue_$c/= -}
+df8e728589009b7923d54eb6fb5bb153
+  $fEqJValue_$c/= ::
+    Structure.JValue -> Structure.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: Structure.JValue) (y :: Structure.JValue) ->
+                 case Structure.$fEqJValue_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fEqJValue_$c== ::
+    Structure.JValue -> Structure.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+df8e728589009b7923d54eb6fb5bb153
+  $fOrdJValue :: GHC.Classes.Ord Structure.JValue
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Structure.JValue
+                  Structure.$fEqJValue
+                  Structure.$fOrdJValue_$ccompare
+                  Structure.$fOrdJValue_$c<
+                  Structure.$fOrdJValue_$c<=
+                  Structure.$fOrdJValue_$c>
+                  Structure.$fOrdJValue_$c>=
+                  Structure.$fOrdJValue_$cmax
+                  Structure.$fOrdJValue_$cmin -}
+df8e728589009b7923d54eb6fb5bb153
+  $fOrdJValue_$c< ::
+    Structure.JValue -> Structure.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Structure.JValue) (y :: Structure.JValue) ->
+                 case Structure.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fOrdJValue_$c<= ::
+    Structure.JValue -> Structure.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Structure.JValue) (y :: Structure.JValue) ->
+                 case Structure.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fOrdJValue_$c> ::
+    Structure.JValue -> Structure.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Structure.JValue) (y :: Structure.JValue) ->
+                 case Structure.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fOrdJValue_$c>= ::
+    Structure.JValue -> Structure.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Structure.JValue) (y :: Structure.JValue) ->
+                 case Structure.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fOrdJValue_$ccompare ::
+    Structure.JValue -> Structure.JValue -> GHC.Types.Ordering
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+df8e728589009b7923d54eb6fb5bb153
+  $fOrdJValue_$cmax ::
+    Structure.JValue -> Structure.JValue -> Structure.JValue
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Structure.JValue) (y :: Structure.JValue) ->
+                 case Structure.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fOrdJValue_$cmin ::
+    Structure.JValue -> Structure.JValue -> Structure.JValue
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Structure.JValue) (y :: Structure.JValue) ->
+                 case Structure.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fShowJValue :: GHC.Show.Show Structure.JValue
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Structure.JValue
+                  Structure.$fShowJValue_$cshowsPrec
+                  Structure.$fShowJValue_$cshow
+                  Structure.$fShowJValue_$cshowList -}
+df8e728589009b7923d54eb6fb5bb153
+  $fShowJValue1 :: Structure.JValue -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (Structure.$fShowJValue_$cshowsPrec
+                   Structure.$fShowJValue2) -}
+2f76377fbc3de6e8666f56640d8949eb
+  $fShowJValue2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fShowJValue_$cshow :: Structure.JValue -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Structure.JValue) ->
+                 Structure.$fShowJValue_$cshowsPrec
+                   Structure.$fShowJValue2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fShowJValue_$cshowList :: [Structure.JValue] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Structure.JValue]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Structure.JValue
+                   Structure.$fShowJValue1
+                   ls
+                   s) -}
+df8e728589009b7923d54eb6fb5bb153
+  $fShowJValue_$cshowsPrec ::
+    GHC.Types.Int -> Structure.JValue -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+c13a7e9563031389498acba495784b8a
+  $tc'JArray :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12012800100857408140##
+                   17265556896794661736##
+                   Structure.$trModule
+                   Structure.$tc'JArray2
+                   0#
+                   Structure.$tc'JArray1) -}
+8a55df06ad92254b585cf35eba5dbeb5
+  $tc'JArray1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+74afcf720e279282937b7ed7fcacc964
+  $tc'JArray2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$tc'JArray3) -}
+c230366266074159bf89ed2373d78081
+  $tc'JArray3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JArray"#) -}
+d13139dab5d97889a5993e34e1110d29
+  $tc'JBool :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16610015474185282147##
+                   8777009293121439487##
+                   Structure.$trModule
+                   Structure.$tc'JBool2
+                   0#
+                   Structure.$tc'JBool1) -}
+1583ab654f413f82f902e791ef8e208e
+  $tc'JBool1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+376a6649bc83d0cbd895cdc8f890e00c
+  $tc'JBool2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$tc'JBool3) -}
+3ddaf3dae09058ba15b9a816e1c1c3b8
+  $tc'JBool3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JBool"#) -}
+b0889ca591b036f8c7cfe8ed1288bdae
+  $tc'JNull :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14849859643720436471##
+                   4873701243298378202##
+                   Structure.$trModule
+                   Structure.$tc'JNull2
+                   0#
+                   Structure.$tc'JNull1) -}
+b6914a992c1d38c28efdc56e4d68d2aa
+  $tc'JNull1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+6156aac3a5ba897453f5bf8dadee47bd
+  $tc'JNull2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$tc'JNull3) -}
+2d6297a5525a9a662a5e8de8d9300ce1
+  $tc'JNull3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JNull"#) -}
+0c440f7f5f604d2327fe21b6f47bccfc
+  $tc'JNumber :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4248397955787145272##
+                   14188478671265232209##
+                   Structure.$trModule
+                   Structure.$tc'JNumber2
+                   0#
+                   Structure.$tc'JNumber1) -}
+7c056caa4f25ee94c85f7b1ac7ae5aa5
+  $tc'JNumber1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dc504e3f68c639798d25f51f9d874601
+  $tc'JNumber2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$tc'JNumber3) -}
+a0c754b35879ec2aa1a7dbfafc24d04f
+  $tc'JNumber3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JNumber"#) -}
+215fbd4eeb151686d3642c1e55b0ec62
+  $tc'JObject :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12088507417520548354##
+                   9651054711425395633##
+                   Structure.$trModule
+                   Structure.$tc'JObject2
+                   0#
+                   Structure.$tc'JObject1) -}
+3d2e67f7191d3fb1525f5d658793d4c4
+  $tc'JObject1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+b510bc2a89c728586c8574c292b427ef
+  $tc'JObject2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$tc'JObject3) -}
+ea855ce9d25d48c3f71d4e2de58a6c8b
+  $tc'JObject3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JObject"#) -}
+3f18a83e046a4de8cb8b950bd73c3276
+  $tc'JString :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17773345304014415996##
+                   13388045550810658615##
+                   Structure.$trModule
+                   Structure.$tc'JString2
+                   0#
+                   Structure.$tc'JString1) -}
+20e498b9773b7930f79dcacb81507585
+  $tc'JString1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ac7c3555ff4f09ea68778b080446d251
+  $tc'JString2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$tc'JString3) -}
+0bf30f44a475634f4956538206d12192
+  $tc'JString3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JString"#) -}
+eaa668e48e5e8be5edaa71a7e1fda55a
+  $tcJValue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17680799798109613475##
+                   99447038946783585##
+                   Structure.$trModule
+                   Structure.$tcJValue1
+                   0#
+                   GHC.Types.krep$*) -}
+73578988a210542c9ac3360446ca7966
+  $tcJValue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$tcJValue2) -}
+0d981b558e5bb4bfdcab596160749e22
+  $tcJValue2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("JValue"#) -}
+dd236e3cb87f8c7c53b5e9dd7b438d66
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Structure.$trModule3
+                   Structure.$trModule1) -}
+b732cf6d97d58ff305e75e268776a544
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$trModule2) -}
+0e5eb61f510d8006149282d568ee12d7
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Structure"#) -}
+8c39250d13ffb55bf5e7703749ed11b8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Structure.$trModule4) -}
+12fedf376d730cb38ced2b387276e550
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+df8e728589009b7923d54eb6fb5bb153
+  data JValue
+    = JString GHC.Base.String
+    | JNumber GHC.Types.Double
+    | JBool GHC.Types.Bool
+    | JNull
+    | JObject [(GHC.Base.String, Structure.JValue)]
+    | JArray [Structure.JValue]
+instance [safe] GHC.Classes.Eq [Structure.JValue]
+  = Structure.$fEqJValue
+instance [safe] GHC.Classes.Ord [Structure.JValue]
+  = Structure.$fOrdJValue
+instance [safe] GHC.Show.Show [Structure.JValue]
+  = Structure.$fShowJValue
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

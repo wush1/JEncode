@@ -1,0 +1,351 @@
+
+==================== FINAL INTERFACE ====================
+2019-01-29 12:15:08.330835 UTC
+
+interface main:JsonEncoder 8063
+  interface hash: 951b37349a778fe30dbfaaed1908c5c7
+  ABI hash: f2eb52e3685b998d66a44cf522e75728
+  export-list hash: 6152a77264c2eead6049431cbc798e35
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a7ebecf158ae80f21310d1b9a2dfdd4d
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  JsonEncoder.encodeJson
+  JsonEncoder.JValue{JsonEncoder.JArray JsonEncoder.JBool JsonEncoder.JNull JsonEncoder.JNumber JsonEncoder.JObject JsonEncoder.JString}
+module dependencies:
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.List ce2c69da408fdc014383cede9e1f9adf
+import  -/  base-4.12.0.0:Data.OldList c2cab40fed7d27b5e717779f9a3c09ea
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  ghc-prim-0.5.3:GHC.Types 57064c9f957b09bc2e360061ad5cae0b
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fEqJValue :: GHC.Classes.Eq JsonEncoder.JValue
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ JsonEncoder.JValue
+                  JsonEncoder.$fEqJValue_$c==
+                  JsonEncoder.$fEqJValue_$c/= -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fEqJValue_$c/= ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ (x :: JsonEncoder.JValue) (y :: JsonEncoder.JValue) ->
+                 case JsonEncoder.$fEqJValue_$c== x y of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fEqJValue_$c== ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fOrdJValue :: GHC.Classes.Ord JsonEncoder.JValue
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ JsonEncoder.JValue
+                  JsonEncoder.$fEqJValue
+                  JsonEncoder.$fOrdJValue_$ccompare
+                  JsonEncoder.$fOrdJValue_$c<
+                  JsonEncoder.$fOrdJValue_$c<=
+                  JsonEncoder.$fOrdJValue_$c>
+                  JsonEncoder.$fOrdJValue_$c>=
+                  JsonEncoder.$fOrdJValue_$cmax
+                  JsonEncoder.$fOrdJValue_$cmin -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fOrdJValue_$c< ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: JsonEncoder.JValue) (y :: JsonEncoder.JValue) ->
+                 case JsonEncoder.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.LT -> GHC.Types.True }) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fOrdJValue_$c<= ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: JsonEncoder.JValue) (y :: JsonEncoder.JValue) ->
+                 case JsonEncoder.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.GT -> GHC.Types.False }) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fOrdJValue_$c> ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: JsonEncoder.JValue) (y :: JsonEncoder.JValue) ->
+                 case JsonEncoder.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.False GHC.Types.GT -> GHC.Types.True }) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fOrdJValue_$c>= ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> GHC.Types.Bool
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: JsonEncoder.JValue) (y :: JsonEncoder.JValue) ->
+                 case JsonEncoder.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> GHC.Types.True GHC.Types.LT -> GHC.Types.False }) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fOrdJValue_$ccompare ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> GHC.Types.Ordering
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fOrdJValue_$cmax ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> JsonEncoder.JValue
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: JsonEncoder.JValue) (y :: JsonEncoder.JValue) ->
+                 case JsonEncoder.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> y GHC.Types.GT -> x }) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fOrdJValue_$cmin ::
+    JsonEncoder.JValue -> JsonEncoder.JValue -> JsonEncoder.JValue
+  {- Arity: 2, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: JsonEncoder.JValue) (y :: JsonEncoder.JValue) ->
+                 case JsonEncoder.$fOrdJValue_$ccompare x y of wild {
+                   DEFAULT -> x GHC.Types.GT -> y }) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fShowJValue :: GHC.Show.Show JsonEncoder.JValue
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ JsonEncoder.JValue
+                  JsonEncoder.$fShowJValue_$cshowsPrec
+                  JsonEncoder.$fShowJValue_$cshow
+                  JsonEncoder.$fShowJValue_$cshowList -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fShowJValue1 :: JsonEncoder.JValue -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (JsonEncoder.$fShowJValue_$cshowsPrec
+                   JsonEncoder.$fShowJValue2) -}
+f6809e1c7e1215878a448e5e82855220
+  $fShowJValue2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fShowJValue_$cshow :: JsonEncoder.JValue -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: JsonEncoder.JValue) ->
+                 JsonEncoder.$fShowJValue_$cshowsPrec
+                   JsonEncoder.$fShowJValue2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fShowJValue_$cshowList :: [JsonEncoder.JValue] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [JsonEncoder.JValue]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ JsonEncoder.JValue
+                   JsonEncoder.$fShowJValue1
+                   ls
+                   s) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  $fShowJValue_$cshowsPrec ::
+    GHC.Types.Int -> JsonEncoder.JValue -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+0a42d826e14467f40f93c63a846863bd
+  $tc'JArray :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14887986638739897348##
+                   7597813742351551926##
+                   JsonEncoder.$trModule
+                   JsonEncoder.$tc'JArray2
+                   0#
+                   JsonEncoder.$tc'JArray1) -}
+207704ad90f02d127ff650e3cfc99c76
+  $tc'JArray1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d5df6ba59b295de4a5886d17a9fb4059
+  $tc'JArray2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$tc'JArray3) -}
+325eacc3adef24eddc7b2e41a7402e3f
+  $tc'JArray3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JArray"#) -}
+60eb041ca408955e2d670ae22ed3fd8e
+  $tc'JBool :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18305325298308133022##
+                   9191210170884616906##
+                   JsonEncoder.$trModule
+                   JsonEncoder.$tc'JBool2
+                   0#
+                   JsonEncoder.$tc'JBool1) -}
+c095334bdc0328145881a0021a1544de
+  $tc'JBool1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d595859680198a8084dfde028ed8ebb3
+  $tc'JBool2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$tc'JBool3) -}
+4ead129e6572dfdc5c46534a1706bf85
+  $tc'JBool3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JBool"#) -}
+b516fca4c289d13d105d997bb93bf073
+  $tc'JNull :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16097865252927640946##
+                   6158058031920856342##
+                   JsonEncoder.$trModule
+                   JsonEncoder.$tc'JNull2
+                   0#
+                   JsonEncoder.$tc'JNull1) -}
+31787b790dfb25b2fd3af20235d5d66a
+  $tc'JNull1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+456ac8a1c78b3c505589f46a96bd7d7a
+  $tc'JNull2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$tc'JNull3) -}
+46f8c9e14ab39a27aa0b1c95122b1f2a
+  $tc'JNull3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JNull"#) -}
+0211a6b5e520ae56e3210b03f9b25eae
+  $tc'JNumber :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1391361538117052504##
+                   8682047238359777694##
+                   JsonEncoder.$trModule
+                   JsonEncoder.$tc'JNumber2
+                   0#
+                   JsonEncoder.$tc'JNumber1) -}
+da9b531bf412f1651d86f6a859637706
+  $tc'JNumber1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+46fe9285c88a2cc43e7e0d6732d3ee61
+  $tc'JNumber2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$tc'JNumber3) -}
+5d9a1e93d44a26a5c89819a866ae3fbf
+  $tc'JNumber3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JNumber"#) -}
+39264018c51fe528a03b01493320be39
+  $tc'JObject :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1402064275294590773##
+                   11822868980795049941##
+                   JsonEncoder.$trModule
+                   JsonEncoder.$tc'JObject2
+                   0#
+                   JsonEncoder.$tc'JObject1) -}
+7043b9f18c0564e5701c556000e06e48
+  $tc'JObject1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0ebcba9a92826bd1f56d179a93bf2d97
+  $tc'JObject2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$tc'JObject3) -}
+707cb52a3e5ce278b7e1f51e7d7337bc
+  $tc'JObject3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JObject"#) -}
+6db30b8bd12d075002f366a545150352
+  $tc'JString :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18076771546684512565##
+                   10094410931808728293##
+                   JsonEncoder.$trModule
+                   JsonEncoder.$tc'JString2
+                   0#
+                   JsonEncoder.$tc'JString1) -}
+6ffdb2de96f170567f721cdc6db0da62
+  $tc'JString1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d10556762b0b14f44290c491d0116221
+  $tc'JString2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$tc'JString3) -}
+681c33f9358cb62680b44c5acf8afee9
+  $tc'JString3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'JString"#) -}
+251f88dbcbc4d2ebd15e666464a0771b
+  $tcJValue :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7160325688043522812##
+                   14105893755466604545##
+                   JsonEncoder.$trModule
+                   JsonEncoder.$tcJValue1
+                   0#
+                   GHC.Types.krep$*) -}
+b5022633833aa0b4f77f5eb6e5fe613d
+  $tcJValue1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$tcJValue2) -}
+ec74dca7c51ab7700d15a1b64a0c9f18
+  $tcJValue2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("JValue"#) -}
+a68d2d032b71bbef54b32c839aa24c3c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   JsonEncoder.$trModule3
+                   JsonEncoder.$trModule1) -}
+3780fa7aa56a368ac0e87d27a4642ceb
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$trModule2) -}
+e898123c12e14751d8678fb7a4ea5ee2
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("JsonEncoder"#) -}
+93574e7ceb84d78347ddb7776b503375
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS JsonEncoder.$trModule4) -}
+f65922137ce461c3e28176ef6b12c1f6
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+b90eb2a0178b3bcb5b3ba16ce72c1da1
+  data JValue
+    = JString GHC.Base.String
+    | JNumber GHC.Types.Double
+    | JBool GHC.Types.Bool
+    | JNull
+    | JObject [(GHC.Base.String, JsonEncoder.JValue)]
+    | JArray [JsonEncoder.JValue]
+d93f1ed8530a5b1fca5224de246c0ba6
+  encode :: GHC.Types.Int -> JsonEncoder.JValue -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U> -}
+94352811291eb7caaa67d995f56691d7
+  encodeJson :: JsonEncoder.JValue -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (jsonData :: JsonEncoder.JValue) ->
+                 JsonEncoder.encode JsonEncoder.$fShowJValue2 jsonData) -}
+instance [safe] GHC.Classes.Eq [JsonEncoder.JValue]
+  = JsonEncoder.$fEqJValue
+instance [safe] GHC.Classes.Ord [JsonEncoder.JValue]
+  = JsonEncoder.$fOrdJValue
+instance [safe] GHC.Show.Show [JsonEncoder.JValue]
+  = JsonEncoder.$fShowJValue
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+

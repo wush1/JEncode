@@ -1,0 +1,74 @@
+
+==================== FINAL INTERFACE ====================
+2019-01-28 18:30:09.281213 UTC
+
+interface main:Encode 8063
+  interface hash: 0a58a1a2bfd375a29d0f7ecf3ee34ef9
+  ABI hash: 0bcb9a84d7e928392b7195dce15c4603
+  export-list hash: f39119f906826b8c04633fdba2d0d799
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a7ebecf158ae80f21310d1b9a2dfdd4d
+  opt_hash: 6faf2de08de32d19db9870899d88e59a
+  hpc_hash: 93b885adfe0da089cdf634904fd59f71
+  plugin_hash: ad164012d6b1e14942349d58b1132007
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Encode.encode
+module dependencies: Structure
+package dependencies: base-4.12.0.0* ghc-prim-0.5.3
+                      integer-gmp-1.0.2.0
+orphans: base-4.12.0.0:GHC.Float base-4.12.0.0:GHC.Base
+family instance modules: base-4.12.0.0:Control.Applicative
+                         base-4.12.0.0:Data.Functor.Const
+                         base-4.12.0.0:Data.Functor.Identity base-4.12.0.0:Data.Monoid
+                         base-4.12.0.0:Data.Semigroup.Internal base-4.12.0.0:GHC.Generics
+                         base-4.12.0.0:GHC.IO.Exception
+import  -/  base-4.12.0.0:Data.List ce2c69da408fdc014383cede9e1f9adf
+import  -/  base-4.12.0.0:Data.OldList c2cab40fed7d27b5e717779f9a3c09ea
+import  -/  base-4.12.0.0:GHC.Base cc906f98291a1b830546e99a96674547
+import  -/  base-4.12.0.0:GHC.List 734a72beb76d276fb4a0ba2689a5711f
+import  -/  base-4.12.0.0:GHC.Num 847723f2584d989dac1eada133ac3fb8
+import  -/  base-4.12.0.0:GHC.Show 4e438f26d903388cc6c2c5d64ed01b98
+import  -/  base-4.12.0.0:Prelude 5c01365ec01f83bd405ac01cbb9a8d76
+import  -/  ghc-prim-0.5.3:GHC.Classes e0d9c979f6368701f34fa421754d2cce
+import  -/  Structure 8c483118a1fbe84bb0f1f85d17d8a78b
+  exports: 5a24f9b62d30a8458b0bfa67ebf1c5f4
+  JArray 9da3533cb3670ee8f33948f2970c6757
+  JBool c0d99b6142088ed0a677db146257fdf2
+  JNull 86ef08637b0425c179350f2c58508473
+  JNumber 122133bbe58ac6d6f96b03e97eb01e06
+  JObject 19bfc760b81743569b60b2697d508c4e
+  JString 68874c8fc6ab72f1839259a76c935a8a
+  JValue df8e728589009b7923d54eb6fb5bb153
+2efe0ea6819f5ce8b4102be8fb710566
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Encode.$trModule3
+                   Encode.$trModule1) -}
+2468ae6b164cc64523e7562822aa0bc5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Encode.$trModule2) -}
+77ed38f8c69defb7c2626303bccbcea1
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Encode"#) -}
+e11892b0e57db9c53a278564caf6f858
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Encode.$trModule4) -}
+689372e158a06f63e94c97f19d91c90a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+fbd4451e6e2a46922b526fa9e0427dc0
+  encode :: GHC.Types.Int -> Structure.JValue -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,U(U)><S,1*U> -}
+trusted: safe
+require own pkg trusted: False
+module header:
+  Nothing
+declaration docs:
+arg docs:
+
